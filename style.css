@@ -36,7 +36,6 @@ header h1 {
 #timer {
   font-size: 16px;
   font-weight: bold;
-  color: #990000;
 }
 
 .tabs {
@@ -96,6 +95,14 @@ header h1 {
   margin-bottom: 10px;
   font-size: 16px;
   color: #002244;
+}
+
+code {
+  font-family: Consolas, monospace;
+  color: crimson;
+  background-color: #f3f3f3;
+  padding: 2px;
+  font-size: 16px;
 }
 
 pre {
