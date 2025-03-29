@@ -17,358 +17,338 @@
 
     <nav class="tabs">
       <button data-tab="overview" class="active">Overview</button>
+      
       <button data-tab="A">Problem A</button>
+      
       <button data-tab="B">Problem B</button>
+      
       <button data-tab="C">Problem C</button>
+      
       <button data-tab="D">Problem D</button>
+      
       <button data-tab="E">Problem E</button>
+      
       <button data-tab="F">Problem F</button>
+      
       <button data-tab="G">Problem G</button>
+      
       <button data-tab="help">Help</button>
     </nav>
 
     <main>
-    <section id="overview" class="tab-content active">
-      <h2>Problem List</h2>
-      <table class="problem-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Input/Output</th>
-            <th>Time Limit</th>
-            <th>Memory Limit</th>
-            <th>Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="#" onclick="switchTab('A')">A</a></td>
-            <td>The Debutante Dilemma</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('B')">B</a></td>
-            <td>Time Travel Paranoia</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('C')">C</a></td>
-            <td>Kidnapping the Male Lead</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('D')">D</a></td>
-            <td>Rondo of the Heroine and Reasoning</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('E')">E</a></td>
-            <td>The Great Estate Developer Knows</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('F')">F</a></td>
-            <td>I Wanna Be You, Just For a Day</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>175</td>
-          </tr>
-          <tr>
-            <td><a href="#" onclick="switchTab('G')">G</a></td>
-            <td>Fake Saint of the Year</td>
-            <td>standard input/output</td>
-            <td>2 s</td>
-            <td>1024 MB</td>
-            <td>175</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- Overview Section -->
+      <section id="overview" class="tab-content active">
+        <h2>Problem List</h2>
+        <table class="problem-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Input/Output</th>
+              <th>Time Limit</th>
+              <th>Memory Limit</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('A')">A</a></td>
+              <td>The Debutante Dilemma</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>100</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('B')">B</a></td>
+              <td>Time Travel Paranoia</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>100</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('C')">C</a></td>
+              <td>Kidnapping the Male Lead</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>150</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('D')">D</a></td>
+              <td>Rondo of the Heroine and Reasoning</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>150</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('E')">E</a></td>
+              <td>The Great Estate Developer Knows</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>150</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('F')">F</a></td>
+              <td>I Wanna Be You, Just For a Day</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>175</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('G')">G</a></td>
+              <td>Fake Saint of the Year</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>175</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </section>
 
+      <!-- Problem Sections -->
+      
       <section id="A" class="tab-content">
         <h2>A. The Debutante Dilemma</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>In the royal capital of Eorka, the grand Spring Ball is being held at the Imperial Palace. This ball marks the debut of noble ladies into high society. Every eligible noble family sends exactly one daughter (unless they're scandalous enough not to).</p>
-        <p>Penelope, the villainess (but totally misunderstood), has received a guest list with the names of the debutantes. However, she suspects that some commoners might have snuck in by faking noble names. Unacceptable!</p>
-        <p>In Eorka, <strong>noble names are always unique</strong> — no two debutantes should share the same name. If there are any duplicates, the palace guards will start investigating.</p>
-        <p>Can you help Penelope determine if the list is <em>valid</em> (all names are unique) or <em>scandalous</em> (there are duplicates)?</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>In the royal capital of Eorka, the grand Spring Ball is being held at the Imperial Palace. This ball marks the debut of noble ladies into high society. Every eligible noble family sends exactly one daughter (unless they're scandalous enough not to).</p><p>Penelope, the villainess (but totally misunderstood), has received a guest list with the names of the debutantes. However, she suspects that some commoners might have snuck in by faking noble names. Unacceptable!</p><p>In Eorka, <strong>noble names are always unique</strong> — no two debutantes should share the same name. If there are any duplicates, the palace guards will start investigating.</p><p>Can you help Penelope determine if the list is <em>valid</em> (all names are unique) or <em>scandalous</em> (there are duplicates)?</p>
         <h3>Input</h3>
-        <p>The first line contains a single integer \( n \) \((1 ≤ n ≤ 100)\), the number of debutantes.</p>
-        <p>The next \( n \) lines each contain a single string \( s_i \) — the name of the \( i \)-th debutante. Each name is a string of lowercase English letters, length between 1 and 20.</p>
-      
+        <p>The first line contains a single integer \( n \) \((1 ≤ n ≤ 100)\), the number of debutantes.</p><p>The next \( n \) lines each contain a single string \( s_i \) — the name of the \( i \)-th debutante. Each name is a string of lowercase English letters, length between 1 and 20.</p>
         <h3>Output</h3>
         <p>Print <code>Valid</code> if all names are unique. Otherwise, print <code>Scandalous</code>.</p>
-      
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>5
+        
+          <p><strong>Input</strong></p>
+          <pre>5
 evelyne
 beatrice
 yuri
 beatrice
-sophia
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Scandalous</pre>
-        <p><strong>Input</strong></p>
-        <pre>6
+sophia</pre>
+          <p><strong>Output</strong></p>
+          <pre>Scandalous</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>6
 isabelle
 victoria
 noelle
 shuli
 katalina
-penelope
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Valid</pre>
-<h3>Explanation</h3>
-<p>In the first example, <em>Beatrice</em> is listed twice — how dare she show up twice?! So the list is scandalous. In the second example, everyone's name is unique, so the list is valid.</p>
+penelope</pre>
+          <p><strong>Output</strong></p>
+          <pre>Valid</pre>
+        
+        
+        <h3>Explanation</h3>
+        <p><p>In the first example, <em>Beatrice</em> is listed twice — how dare she show up twice?! So the list is scandalous. In the second example, everyone's name is unique, so the list is valid.</p></p>
+        
       </section>
-
-
+      
       <section id="B" class="tab-content">
         <h2>B. Time Travel Paranoia</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>Rosalite discovers that she's stuck in a time loop. Every time her brother, Asterion, dies, she gets sent back to the same point in time!</p>
-        <p>She keeps a journal to track how many things she does each loop. The journal records her <strong>task counts</strong> for every loop.</p>
-        <p>After \( n \) loops, she wants to know: On how many loops did she do <strong>strictly more tasks</strong> than the previous loop?</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>Rosalite discovers that she's stuck in a time loop. Every time her brother, Asterion, dies, she gets sent back to the same point in time!</p><p>She keeps a journal to track how many things she does each loop. The journal records her <strong>task counts</strong> for every loop.</p><p>After \( n \) loops, she wants to know: On how many loops did she do <strong>strictly more tasks</strong> than the previous loop?</p>
         <h3>Input</h3>
-        <p>The first line contains a single integer \( n \) \((2 ≤ n ≤ 1000)\).</p>
-        <p>The second line contains \( n \) integers \( a_1, a_2, ..., a_n \), where \( a_i \) is the number of tasks she completed on the \( i \)-th loop. \((0 ≤ a_i ≤ 10^4)\)</p>
-      
+        <p>The first line contains a single integer \( n \) \((2 ≤ n ≤ 1000)\), the number of loops.</p><p>The second line contains \( n \) integers \( a_1, a_2, ..., a_n \), where \( a_i \) is the number of tasks she completed on the \( i \)-th loop. \((0 ≤ a_i ≤ 10^4)\)</p>
         <h3>Output</h3>
-        <p>Print a single integer: the number of loops where \( a_i > a_{i-1} \).</p>
-      
+        <p>Print a single integer — the number of loops where \( a_i > a_{i-1} \).</p>
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>6
+        
+          <p><strong>Input</strong></p>
+          <pre>6
 3 5 5 6 2 4</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>3</pre>
+          <p><strong>Output</strong></p>
+          <pre>3</pre>
+        
         
         <h3>Explanation</h3>
-        <p>Loop 2 > Loop 1 → Yes<br>Loop 3 = Loop 2 → No<br>Loop 4 > Loop 3 → Yes<br>Loop 5 < Loop 4 → No<br>Loop 6 > Loop 5 → Yes</p>
-        <p>Total: 3 loops where she improved.</p>
+        <p><p>Loop 2 > Loop 1 → Yes<br>Loop 3 = Loop 2 → No<br>Loop 4 > Loop 3 → Yes<br>Loop 5 < Loop 4 → No<br>Loop 6 > Loop 5 → Yes</p><p>Total: 3 loops where she improved.</p></p>
+        
       </section>
-
+      
       <section id="C" class="tab-content">
         <h2>C. Kidnapping the Male Lead</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>Vivian got into a carriage accident and suddenly remembers <em>everything</em>: her future death, the demon's rise, and worst of all — the only clue about the male lead:</p>
-        <p><strong>He was the most handsome man in the empire.</strong></p>
-        
-        <p>That's it. No name. No birthmark. No tragic backstory. Just "handsome".</p>
-        <p>Unfortunately for her, this world is absolutely <em>infested</em> with hot men.</p>
-        <p>Determined to fix the plot, Vivian begins kidnapping the most handsome men she encounters, one by one, hoping to find the real male lead.</p>
-        <p>But now, over 30 kidnappings in, she's desperate. She wants to know if any of them might <em>still</em> be the guy she's looking for.</p>
-        <p>Her logic is simple:</p>
-        <p>The real male lead is the <strong>only man</strong> who has the highest possible beauty score.<br>She kidnapped a bunch of guys and recorded their scores.<br>Can you help her identify if there's <strong>only one</strong> possible male lead?</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>Vivian got into a carriage accident and suddenly remembers <em>everything</em>: her future death, the demon's rise, and worst of all — the only clue about the male lead:</p><p><strong>He was the most handsome man in the empire.</strong></p><p>That's it. No name. No birthmark. No tragic backstory. Just "handsome".</p><p>Unfortunately for her, this world is absolutely <em>infested</em> with hot men.</p><p>Determined to fix the plot, Vivian begins kidnapping the most handsome men she encounters, one by one, hoping to find the real male lead.</p><p>But now, over 30 kidnappings in, she's desperate. She wants to know if any of them might <em>still</em> be the guy she's looking for.</p><p>Her logic is simple:</p><p>The real male lead is the <strong>only man</strong> who has the highest possible beauty score.<br>She kidnapped a bunch of guys and recorded their scores.<br>Can you help her identify if there's <strong>only one</strong> possible male lead?</p>
         <h3>Input</h3>
-        <p>The first line contains an integer \( n \) \( (2 ≤ n ≤ 10^5) \), the number of kidnapped men.</p>
-        <p>The second line contains \( n \) integers \( a_1, a_2, ..., a_n \) \( (1 ≤ a_i ≤ 100) \), where \( a_i \) is the beauty score of the \( i \)-th kidnapped man.</p>
-      
+        <p>The first line contains an integer \( n \) \( (2 ≤ n ≤ 10^5) \), the number of kidnapped men.</p><p>The second line contains \( n \) integers \( a_1, a_2, ..., a_n \) \( (1 ≤ a_i ≤ 100) \), where \( a_i \) is the beauty score of the \( i \)-th kidnapped man.</p>
         <h3>Output</h3>
-        <p>If the highest beauty score appears only once, print <code>Found him!</code> — he's probably the male lead.</p>
-        <p>If multiple men share the top score, print <code>Who knows?</code> — she still has work to do.</p>
-      
+        <p>If the highest beauty score appears only once, print <code>Found him!</code> — he's probably the male lead.</p><p>If multiple men share the top score, print <code>Who knows?</code> — she still has work to do.</p>
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>5
-91 85 97 88 97
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Who knows?</pre>
-        <p><strong>Input</strong></p>
-        <pre>3
-89 92 85
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Found him!</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>5
+91 85 97 88 97</pre>
+          <p><strong>Output</strong></p>
+          <pre>Who knows?</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>3
+89 92 85</pre>
+          <p><strong>Output</strong></p>
+          <pre>Found him!</pre>
+        
+        
       </section>
-
+      
       <section id="D" class="tab-content">
         <h2>D. Rondo of the Heroine and Reasoning</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>On the quiet island of Rokkenjima, a heinous crime has been committed. There are \( n \) suspects numbered from 1 to \( n \). Each suspect gives an alibi by naming one person who they believe is innocent. Every suspect except the culprit is named as innocent by at least one person.</p>
-        <p>The heroine, Erika, arrives on the scene. Erika's task is to <strong>find the culprit</strong> — the one who is never vouched for by anyone.</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>On the quiet island of Rokkenjima, a heinous crime has been committed. There are \( n \) suspects numbered from 1 to \( n \). Each suspect gives an alibi by naming one person who they believe is innocent. Every suspect except the culprit is named as innocent by at least one person.</p><p>The heroine, Erika, arrives on the scene. Erika's task is to <strong>find the culprit</strong> — the one who is never vouched for by anyone.</p>
         <h3>Input</h3>
-        <p>The first line contains an integer \( n \) \( (3 ≤ n ≤ 100)\) — the number of suspects.</p>
-        <p>The second line contains \(n\) integers \(a_1, a_2, …, a_n \) \((1 ≤ a_i ≤ n)\), where \(a_i\) represents the suspect that the \(i\)-th suspect claims is innocent.</p>
-      
+        <p>The first line contains an integer \( n \) \( (3 ≤ n ≤ 100)\), the number of suspects.</p><p>The second line contains \(n\) integers \(a_1, a_2, …, a_n \) \((1 ≤ a_i ≤ n)\), where \(a_i\) represents the suspect that the \(i\)-th suspect claims is innocent.</p>
         <h3>Output</h3>
         <p>Print a single integer — the number of the culprit (i.e., the suspect who is never declared innocent by any other suspect). It is guaranteed that only one culprit exists.</p>
-      
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>4
+        
+          <p><strong>Input</strong></p>
+          <pre>4
 2 3 1 1</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>4</pre>
+          <p><strong>Output</strong></p>
+          <pre>4</pre>
+        
         
         <h3>Explanation</h3>
-        <p>Suspects 1, 2, and 3 are declared innocent by 3, 1, and 2. Only suspect 4 is not declared innocent by any suspect. Therefore, suspect 4 is the culprit.</p>
+        <p><p>Suspects 1, 2, and 3 are declared innocent by 3, 1, and 2. Only suspect 4 is not declared innocent by any suspect. Therefore, suspect 4 is the culprit.</p></p>
+        
       </section>
-
+      
       <section id="E" class="tab-content">
         <h2>E. The Great Estate Developer Knows</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>Lloyd has been commissioned to solve a water crisis in Frontera, a bustling town on a 2D grid. The Queen has finally approved a project to dig a straight canal from the top of the city to the bottom, connecting the royal reservoir to the farmland.</p>
-        <p>Lloyd must now choose a single column in the 2D city grid and demolish as few buildings (<code>#</code>) as possible in that column to create a clear vertical canal from the top to the bottom.</p>
-        <p>You must help Lloyd determine the <strong>minimum number of demolitions</strong> required to make any one column fully diggable (i.e., turn all cells in that column into <code>.</code>). He doesn't care which column — he'll just pick the cheapest.</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>Lloyd has been commissioned to solve a water crisis in Frontera, a bustling town on a 2D grid. The Queen has finally approved a project to dig a straight canal from the top of the city to the bottom, connecting the royal reservoir to the farmland.</p><p>Lloyd must now choose a single column in the 2D city grid and demolish as few buildings (<code>#</code>) as possible in that column to create a clear vertical canal from the top to the bottom.</p><p>You must help Lloyd determine the <strong>minimum number of demolitions</strong> required to make any one column fully diggable (i.e., turn all cells in that column into <code>.</code>). He doesn't care which column — he'll just pick the cheapest.</p>
         <h3>Input</h3>
-        <p>The first line contains two integers \(n\) and \(m\) \((1 ≤ n, m ≤ 100)\) — the number of rows and columns.</p>
-        <p>The next \( n \) lines, each with a string of \( m \) characters, represent the city grid:<br><code>.</code> = empty land (no demolition needed)<br><code>#</code> = building (needs to be demolished)</p>
-      
+        <p>The first line contains two integers \(n\) and \(m\) \((1 ≤ n, m ≤ 100)\), the number of rows and columns.</p><p>The next \( n \) lines, each with a string of \( m \) characters, represent the city grid:<br><code>.</code> = empty land (no demolition needed)<br><code>#</code> = building (needs to be demolished)</p>
         <h3>Output</h3>
         <p>Print a single integer — the minimum number of buildings that must be demolished in a single column to build the vertical canal.</p>
-      
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>4 5
+        
+          <p><strong>Input</strong></p>
+          <pre>4 5
 .....
 ..#..
 .....
-..#..
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>0</pre>
-        <p><strong>Input</strong></p>
-        <pre>4 5
+..#..</pre>
+          <p><strong>Output</strong></p>
+          <pre>0</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>4 5
 #....
 .##..
 ..###
-..#..
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>1</pre>
+..#..</pre>
+          <p><strong>Output</strong></p>
+          <pre>1</pre>
+        
+        
       </section>
-
+      
       <section id="F" class="tab-content">
         <h2>F. I Wanna Be You, Just For a Day</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>After a wild body-switching incident, \(n\) people ended up in the wrong bodies. Initially, person \( i \) was in body \( i \), but now person \( i \) is in body \( p[i] \). The array \( p \) is a permutation of \( {1, 2, ..., n} \).</p>
-        <p>Medea needs to restore everyone to their original body using swap operations. In each swap, she can choose any two people and swap the bodies they're in.</p>
-        <p>Find the <strong>minimum number of swaps</strong> required to return everyone to their proper body.</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>After a wild body-switching incident, \(n\) people ended up in the wrong bodies. Initially, person \( i \) was in body \( i \), but now person \( i \) is in body \( p[i] \). The array \( p \) is a permutation of \( {1, 2, ..., n} \).</p><p>Medea needs to restore everyone to their original body using swap operations. In each swap, she can choose any two people and swap the bodies they're in.</p><p>Find the <strong>minimum number of swaps</strong> required to return everyone to their proper body.</p>
         <h3>Input</h3>
-        <p>The first line contains a single integer \(n \) \( (2 ≤ n ≤ 1000)\) — the number of people.</p>
-        <p>The second line contains \(n\) space-separated integers \( p_1, p_2, …, p_n \) \((1 ≤ p_i ≤ n) \), where \( p_i \) is the current body of person \(i\).</p>
-      
+        <p>The first line contains a single integer \(n \) \( (2 ≤ n ≤ 1000)\), the number of people.</p><p>The second line contains \(n\) space-separated integers \( p_1, p_2, …, p_n \) \((1 ≤ p_i ≤ n) \), where \( p_i \) is the current body of person \(i\).</p>
         <h3>Output</h3>
         <p>Print a single integer — the minimum number of swap operations required to restore everyone to their original body.</p>
-      
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>4
-2 1 4 3</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>2</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>4 1 4 3</pre>
+          <p><strong>Output</strong></p>
+          <pre>2</pre>
+        
+        
         <h3>Explanation</h3>
-        <p>Swap (1, 2) and (3, 4). Total swaps = 2.</p>
+        <p><p>Swap (1, 2) and (3, 4). Total swaps = 2.</p></p>
+        
       </section>
       
       <section id="G" class="tab-content">
         <h2>G. Fake Saint of the Year</h2>
-        <div class="limits">time limit per test: 2 seconds<br>memory limit per test: 1024 megabytes</div>
-      
-        <p>Elrise, fake saint and con-artist extraordinaire, has made it to the finale of the Grand Mages' Tournament. In the last trial, she must face off against multiple battle challenges, one after another.</p>
-        <p>In each challenge, she is given a sequence of \( n \) magical attacks represented by integers. She must respond with spells of equal or greater strength to survive.</p>
-        <p>Before each challenge, she may rearrange her spells in any order. But she must use each spell exactly once, in some order, to block the enemy attacks — also one by one.</p>
-        <p>Elrise will win the challenge only if she can <strong>block all enemy spells</strong>, such that:</p>
-        <p>Each of her spells' power is ≥ the enemy spell's power at that turn.<br>Spells cannot be reused.<br>She must commit to a fixed order before the fight starts.</p>
-      
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p>Elrise, fake saint and con-artist extraordinaire, has made it to the finale of the Grand Mages' Tournament. In the last trial, she must face off against multiple battle challenges, one after another.</p><p>In each challenge, she is given a sequence of \( n \) magical attacks represented by integers. She must respond with spells of equal or greater strength to survive.</p><p>Before each challenge, she may rearrange her spells in any order. But she must use each spell exactly once, in some order, to block the enemy attacks — also one by one.</p><p>Elrise will win the challenge only if she can <strong>block all enemy spells</strong>, such that:</p><p>Each of her spells' power is ≥ the enemy spell's power at that turn.<br>Spells cannot be reused.<br>She must commit to a fixed order before the fight starts.</p>
         <h3>Input</h3>
-        <p>The first line contains an integer \( n \) \((1 ≤ n ≤ 10^5) \), the number of spells in the challenge.</p>
-        <p>The second line contains \( n \) integers \(e_1, e_2, ..., e_n\), where \(e_i\) is the power of the enemy spell.</p>
-        <p>The third line contains \( n \) integers \(f_1, f_2, ..., f_n\), where \(f_i\) is the power of Elrise's spell \(i\).</p>
-      
+        <p>The first line contains an integer \( n \) \((1 ≤ n ≤ 10^5) \), the number of spells in the challenge.</p><p>The second line contains \( n \) integers \(e_1, e_2, ..., e_n\), where \(e_i\) is the power of the enemy spell.</p><p>The third line contains \( n \) integers \(f_1, f_2, ..., f_n\), where \(f_i\) is the power of Elrise's spell \(i\).</p>
         <h3>Output</h3>
         <p>Print <code>Victory</code> if Elrise can reorder her spells to block all enemy spells. Otherwise, print <code>Exposed</code> — her cover's blown and it's all over for her.</p>
-      
         <h3>Example</h3>
-        <p><strong>Input</strong></p>
-        <pre>5
-2 4 3 5 1
-3 5 2 6 4
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Victory</pre>
         
-        <p><strong>Input</strong></p>
-        <pre>3
+          <p><strong>Input</strong></p>
+          <pre>5
+2 4 3 5 1
+3 5 2 6 4</pre>
+          <p><strong>Output</strong></p>
+          <pre>Victory</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>3
 5 6 7
-5 5 5
-</pre>
-      
-        <p><strong>Output</strong></p>
-        <pre>Exposed</pre>
+5 5 5</pre>
+          <p><strong>Output</strong></p>
+          <pre>Exposed</pre>
+        
+        
       </section>
+      
+
+      <!-- Help Section -->
       <section id="help" class="tab-content">
         <h2>Help: Standard Input/Output</h2>
         <p>
           In programming competitions, problems usually require you to read from <strong>standard input</strong> and write to <strong>standard output</strong>.
         </p>
-
         <h3>What is Standard Input?</h3>
         <p>
           This is the input your program reads from the console. You don't need to open any files or create a GUI. Just read using language-specific commands like <code>cin</code> (C++) or <code>input()</code> (Python).
         </p>
-
-    
         <h3>What is Standard Output?</h3>
         <p>
           This is where your program writes its answers — again, through the console. Use commands like <code>cout</code> (C++) or <code>print()</code> (Python). Make sure the output matches the required format exactly.
         </p>
-    
         <h3>Sample Problem:</h3>
         <p>Given two integers \( A \) and \( B \), print their sum.</p>
-    
         <h3>Input</h3>
         <pre>3 4</pre>
-    
         <h3>Output</h3>
         <pre>7</pre>
-    
         <h3>Sample Solution Template</h3>
-    
         <p><strong>In C++</strong></p>
         <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -379,7 +359,6 @@ int main() {
     cout << A + B << endl; // Print their sum
     return 0;
 }</pre>
-      
         <p><strong>In Python</strong></p>
         <pre># Read input, split by space, convert to int
 A, B = map(int, input().split())
