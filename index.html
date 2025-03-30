@@ -279,9 +279,9 @@ penelope</pre>
           time limit per test: 2 seconds<br>
           memory limit per test: 1024 megabytes
         </div>
-        <p>After a wild body-switching incident, \(n\) people ended up in the wrong bodies. Initially, person \( i \) was in body \( i \), but now person \( i \) is in body \( p[i] \). The array \( p \) is a permutation of \( {1, 2, ..., n} \).</p><p>Medea needs to restore everyone to their original body using swap operations. In each swap, she can choose any two people and swap the bodies they're in.</p><p>Find the <strong>minimum number of swaps</strong> required to return everyone to their proper body.</p>
+        <p>After a wild body-switching incident, \(n\) people ended up in the wrong bodies. Initially, body \( i \) contained the mind of person \( i \), but now body \( i \) contains the mind of person \( p[i] \). Array \( p \) is a permutation of \( {1, 2, ..., n} \).</p><p>Medea needs to restore everyone to their original body using swap operations. In each swap, she can choose any two people and swap the bodies they're in.</p><p>Find the <strong>minimum number of swaps</strong> required to return everyone to their proper body.</p>
         <h3>Input</h3>
-        <p>The first line contains a single integer \(n \) \( (2 ≤ n ≤ 1000)\), the number of people.</p><p>The second line contains \(n\) space-separated integers \( p_1, p_2, …, p_n \) \((1 ≤ p_i ≤ n) \), where \( p_i \) is the current body of person \(i\).</p>
+        <p>The first line contains a single integer \(n \) \( (2 ≤ n ≤ 1000)\), the number of people.</p><p>The second line contains \(n\) space-separated integers \( p_1, p_2, …, p_n \) \((1 ≤ p_i ≤ n) \), where \( p_i \) is the current mind inside of body \(i\).</p>
         <h3>Output</h3>
         <p>Print a single integer — the minimum number of swap operations required to restore everyone to their original body.</p>
         <h3>Example</h3>
