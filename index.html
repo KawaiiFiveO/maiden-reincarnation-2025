@@ -28,7 +28,9 @@
       
       <button data-tab="E">Problem E</button>
       
-      <button data-tab="F">Problem F</button>
+      <button data-tab="F1">Problem F1</button>
+      
+      <button data-tab="F2">Problem F2</button>
       
       <button data-tab="G">Problem G</button>
       
@@ -98,12 +100,21 @@
             </tr>
             
             <tr>
-              <td><a href="#" onclick="switchTab('F')">F</a></td>
-              <td>I Wanna Be You, Just For a Day</td>
+              <td><a href="#" onclick="switchTab('F1')">F1</a></td>
+              <td>I Wanna Be You, Just For a Day (Easy)</td>
               <td>standard input/output</td>
               <td>2 s</td>
               <td>1024 MB</td>
               <td>175</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#" onclick="switchTab('F2')">F2</a></td>
+              <td>I Wanna Be You, Just For a Day (Hard)</td>
+              <td>standard input/output</td>
+              <td>2 s</td>
+              <td>1024 MB</td>
+              <td>0</td>
             </tr>
             
             <tr>
@@ -273,8 +284,8 @@ penelope</pre>
         
       </section>
       
-      <section id="F" class="tab-content">
-        <h2>F. I Wanna Be You, Just For a Day</h2>
+      <section id="F1" class="tab-content">
+        <h2>F1. I Wanna Be You, Just For a Day (Easy)</h2>
         <div class="limits">
           time limit per test: 2 seconds<br>
           memory limit per test: 1024 megabytes
@@ -295,6 +306,37 @@ penelope</pre>
         
         <h3>Explanation</h3>
         <p><p>Swap (1, 2) and (3, 4). Total swaps = 2.</p></p>
+        
+      </section>
+      
+      <section id="F2" class="tab-content">
+        <h2>F2. I Wanna Be You, Just For a Day (Hard)</h2>
+        <div class="limits">
+          time limit per test: 2 seconds<br>
+          memory limit per test: 1024 megabytes
+        </div>
+        <p><strong>This is the hard variant of Problem F1. It is worth zero points and is presented here as a bonus problem.</strong></p><p>After a wild body-switching incident, \(n\) people ended up in the wrong bodies. Initially, body \( i \) contained the mind of person \( i \), but now body \( i \) contains the mind of person \( p[i] \). Array \( p \) is a permutation of \( {1, 2, ..., n} \).</p><p>Medea needs to restore everyone's minds to their original bodies using swap operations. In each swap, she can choose two people and swap their minds between the bodies they're in. However, her magic has a major limitation: she <strong>cannot swap</strong> the minds of two bodies who have already switched with each other.</p><p>Luckily, Psyche has determined that it is possible to restore everyone to their original bodies using <strong>two additional helpers</strong>.</p><p>Assume that the original \(n\) people can no longer switch among themselves after the incident. Determine the <strong>minimum number of swaps</strong> required to get everyone back into their own bodies using two extra people who were <em>not involved</em> in any of the original swaps.</p><p>Note that once Medea performs a mind swap between two specific bodies, she can never swap minds between those two bodies again.</p>
+        <h3>Input</h3>
+        <p>The first line contains a single integer \(n \) \( (2 ≤ n ≤ 1000)\), the number of people.</p><p>The second line contains \(n\) space-separated integers \( p_1, p_2, …, p_n \) \((1 ≤ p_i ≤ n) \), where \( p_i \) is the current mind inside of body \(i\).</p>
+        <h3>Output</h3>
+        <p>Print a single integer — the minimum number of additional swaps required to return everyone to their original bodies using <strong>only fresh swaps</strong> (no repeat pairs) and two helpers.</p>
+        <h3>Example</h3>
+        
+          <p><strong>Input</strong></p>
+          <pre>3
+2 3 1</pre>
+          <p><strong>Output</strong></p>
+          <pre>6</pre>
+        
+          <p><strong>Input</strong></p>
+          <pre>12
+2 3 1 5 4 12 8 9 10 7 11 6</pre>
+          <p><strong>Output</strong></p>
+          <pre>19</pre>
+        
+        
+        <h3>Explanation</h3>
+        <p><p>In Example 1, one possible series of switches is as follows:</p><p>Start with two fresh helpers, A and B → [2 3 1] [A B]<br>A's body (receiving 3's mind) ⟷ 2's body (receiving A's mind) → [2 A 1] [3 B]<br>B's body (receiving 1's mind) ⟷ 3's body (receiving B's mind) → [2 A B] [3 1]<br>B's body (receiving 2's mind) ⟷ 1's body (receiving 1's mind) → [1 A B] [3 2]<br>B's body (receiving A's mind) ⟷ 2's body (receiving 2's mind) → [1 2 B] [3 A]<br>A's body (receiving B's mind) ⟷ 3's body (receiving 3's mind) → [1 2 3] [B A]<br>A's body (receiving A's mind) ⟷ B's body (receiving B's mind) → [1 2 3] [A B]</p><p>Total: 6 swaps to restore everyone to their original body.<br>No pair of bodies was swapped more than once, and no swaps between any of the original \( n \) people.</p></p>
         
       </section>
       
